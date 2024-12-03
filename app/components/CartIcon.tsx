@@ -16,7 +16,7 @@ const CartIcon = () => {
 
   return (
     <div className='relative mt-2'>
-      <button onClick={() => setCartSidebar(!cartSidebar)} className=' text-blue-700 text-4xl'><BiCart />
+      <button onClick={() => setCartSidebar(!cartSidebar)} className=' text-green-700 text-4xl'><BiCart />
         <span className='absolute top-[-10px] right-[-10px] bg-red-600 text-white text-xs px-2 rounded-full'>{cartLength}</span>
       </button>
       <div className={`absolute top-16 md:top-10 -right-20 md:right-0 w-[22rem] md:w-96 bg-white shadow-lg p-5 border border-gray-300 md:border-gray-500 md:rounded-md z-30 ${!cartSidebar ? 'hidden' : ''}`}>
@@ -41,7 +41,7 @@ const CartIcon = () => {
           <p className='text-sm font-semibold'>${Number(cart.reduce((total, item) => total + item.totalAmount, 0)).toFixed(2)}</p>
         </div>
         <div className='flex items-center gap-4 justify-between'>
-        <Link href={"/checkout"}><button className='w-full bg-blue-700 text-white py-2 px-4 rounded-md mt-5 text-center disabled:bg-gray-300 disabled:text-gray-700' onClick={() => setCartSidebar(false)} disabled={cart.length <= 0}>Checkout</button></Link>
+        <Link href={"/checkout"}><button className='w-full bg-amber-400 text-white py-2 px-4 rounded-md mt-5 text-center disabled:bg-gray-300 disabled:text-gray-700' onClick={() => setCartSidebar(false)} disabled={cart.length <= 0}>Checkout</button></Link>
         <Link href='/cart' className='w-full bg-black text-white py-2 px-4 rounded-md mt-5 text-center' onClick={() => setCartSidebar(false)}>View Cart</Link>
         </div>
       </div>

@@ -28,8 +28,8 @@ const ProductCard = ({ data, cartBtn = true }: { data: ProductCardType, cartBtn?
                                     key={index}
                                     className={
                                         index < rating.rate
-                                            ? 'text-[#E9A426]'
-                                            : 'text-[#A2A6B0]'
+                                            ? 'text-[#868686]'
+                                            : 'text-[#ac8846]'
                                     }
                                 />
                             ))}

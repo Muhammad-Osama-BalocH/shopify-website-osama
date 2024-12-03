@@ -19,7 +19,7 @@ const CartBtn = ({ cartBtn, data }: { cartBtn: boolean, data: ProductCardType })
 
     return (
         <>
-            {cartBtn && <button className='px-3 py-2 rounded-full border-[#0156FF] text-[#0156FF] border-2 hover:bg-[#0156FF] text-sm md:text-lg mx-1 md:mx-4 mb-2 hover:text-white transition-colors duration-300 font-semibold flex items-center justify-center gap-2 disabled:bg-gray-300 disabled:text-gray-700 disabled:border-transparent' disabled={isInCart} onClick={ handleAddToCart} >
+            {cartBtn && <button className='px-3 py-2 rounded-full border-[#f8faff] text-[#689454] border-2 hover:bg-[#565c66] text-sm md:text-lg mx-1 md:mx-4 mb-2 hover:text-amber-800 transition-colors duration-300 font-semibold flex items-center justify-center gap-2 disabled:bg-gray-300 disabled:text-gray-700 disabled:border-transparent' disabled={isInCart} onClick={ handleAddToCart} >
                 {isInCart ? <CiCircleCheck /> : <RiShoppingCartFill className='text-xl' />} {isInCart ? "Added in Cart" : "Add to cart"}
             </button>
             }

@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
-  title: "KhareedLo",
+  title: "shopify",
   description: "This ecommerce website is coming soon",
 };
 
