@@ -31,8 +31,8 @@ export default async function Home() {
       <section className="w-full p-5">
         <Testimonial />
       </section>
-      <div className="stick bottom-0 w-full p-2 bg-black text-white text-center">
-        Made By Sarfaraz
+      <div className="stick bottom-0 w-full p-2 bg-black text-blue-400 text-center">
+        Made by Muhammad Osama
       </div>
     </div>
 
